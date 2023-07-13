@@ -1,14 +1,28 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
-      <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
-    <% end %>
+    <div class="navbar-links-left">
+      <%= link_to "/", class: "navbar-brand" do %>
+        <h1 id="header-navbar">CLEO</h1>
+      <% end %>
+
+      <div class="navbar-links">
+          <div class="navbar-link-div">
+            <%= link_to "Problems", "/problems" %>
+          </div>
+          <div class="navbar-link-div">
+            <%= link_to "Solutions", "/solutions" %>
+          </div>
+          <div class="navbar-link-div">
+            <%= link_to "Features", "/features" %>
+          </div>
+      </div>
+    </div>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse navbar-links-right" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
@@ -28,9 +42,14 @@
             </div>
           </li>
         <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          </li>
+          <div class="navbar-links">
+            <div class="navbar-link-div">
+              <%= link_to "Login", new_user_session_path %>
+            </div>
+            <div class="navbar-link-div">
+              <%= link_to "Feedback", "/feedback", class: "feedback-link" %>
+            </div>
+          </div>
         <% end %>
       </ul>
     </div>

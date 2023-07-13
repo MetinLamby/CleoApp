@@ -1,1 +1,19 @@
 // Specific CSS for your home-page
+.home-container {
+    height: 90vh;
+    .banner {
+        margin: 70px 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            font-size: 70px;
+            font-weight: 800;
+            text-align: center;
+        }
+        h4 {
+            margin: 20px 0px;
+            font-weight: lighter; 
+        }
+    }
+} 
