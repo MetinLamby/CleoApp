@@ -1,9 +1,8 @@
 // Specific CSS for your home-page
 .home-container {
-    height: 90vh;
+    height: 60vh;
     .banner {
         margin: 70px 300px;
-        display: flex;
         align-items: center;
         justify-content: center;
         h1 {
@@ -14,6 +13,35 @@
         h4 {
             margin: 20px 0px;
             font-weight: lighter; 
+            text-align: center;
         }
+        .banner-btn {
+            margin: 50px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+              padding: 15px;
+              font-weight: 400;
+              color: grey;
+              text-decoration-line: none;
+            }
+            .newsletter-link {
+              background-color: #9F20E9;
+              border: 0px solid #F5F5F5;
+              color: white;
+              border-radius: 5%;
+              font-weight: 700;
+            }
+            .newsletter-link:hover {
+              background-color: #7C12BA;
+            }
+          }
     }
 } 
+
+.home-image {
+    height: 10vh;
+    width: 100vw;
+}
+
