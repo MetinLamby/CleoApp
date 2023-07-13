@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   get "problems", to: "pages#problems"
-  get "solutions", to: "pages#solutions"
+  get "addedvalue", to: "pages#addedvalue"
   get "features", to: "pages#features"
   get "feedback", to: "pages#feedback"
   get "newsletter", to: "pages#newsletter"

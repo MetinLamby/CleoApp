@@ -1,0 +1,45 @@
+.container-features {
+    .value-prop {
+        margin: 80px 200px;
+        padding: 50px;
+        h5 {
+            font-weight: lighter;
+        }
+        h1 {
+            font-weight: 700;
+        }
+        .value-detail-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .value-text-div {
+                margin-right: 100px;
+                ul {
+                    list-style-type: none;
+                    li {
+                        i {
+                            margin-right: 7px;
+                        }
+                       margin: 30px 0px; 
+                       h6 {
+                        font-weight: bold;
+                       }
+                       p {
+                        margin-left: 26px;
+                        color: darkgrey;
+                       }
+                    }
+                }
+            }
+            .feature-image-div {
+                width: 40%;
+                .feature-img {
+                    width: -webkit-fill-available;
+                }
+            }
+        }
+    }
+    .vendor-management-div {
+        background-color: #FCF7FF;
+    }
+}

@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :problems, :solutions, :features, :feedback, :newsletter]
+  skip_before_action :authenticate_user!, only: [ :home, :problems, :addedvalue, :features, :feedback, :newsletter]
 
   def home
   end
@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   def problems
   end
 
-  def solutions
+  def addedvalue
   end
 
   def features
