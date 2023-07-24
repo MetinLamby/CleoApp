@@ -9,6 +9,13 @@
       align-items: center;
       justify-content: center;
       height: 100%;
+      a {
+        padding: 15px;
+        font-weight: 400;
+        color: grey;
+        text-decoration-line: none;
+        font-size: larger;
+      }
       .navbar-links {
         height: 100%;
         padding-left: 60px;

@@ -1,10 +1,10 @@
 // Specific CSS for your home-page
-.home-container {
-    height: 60vh;
     .banner {
-        margin: 70px 300px;
+        //background-color: grey;
         align-items: center;
         justify-content: center;
+        display: flex;
+        height: 70vh;
         h1 {
             font-size: 70px;
             font-weight: 800;
@@ -38,10 +38,69 @@
             }
           }
     }
-} 
 
 .home-image {
     height: 10vh;
     width: 100vw;
+}
+
+.home-solutions {
+  background-color: #FCF7FF;
+  padding: 80px;
+
+  .divider {
+    margin-top: 20px;
+    position: relative;
+    height: 2px;
+    background-color: #7C12BA; /* Set the color of the divider line */
+  }
+
+
+  .solutions-header {
+    font-size: 50px;
+    font-weight: 800;
+  }
+  .solutions-small-header {
+    font-weight: lighter;
+  }
+  .solution-cards {
+    margin: 40px 0px;
+    .solution-card {
+      padding: 30px;
+      .card-header {
+        margin: 20px 0;
+        font-weight: 700;
+      }
+      .card-small-header {
+        font-weight: lighter;
+      }
+      .benefits {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .benefits-text {
+          width: 50%;
+          ul {
+            list-style-type: none;
+            padding-left: 0px;
+            li {
+                i {
+                    margin-right: 7px;
+                }
+                font-weight: bold;
+                font-size: larger;
+                margin: 30px 0px; 
+            }
+          }
+        }
+        .benefits-image {
+          width: 50%;
+          .feature-img {
+            width: -webkit-fill-available;
+          }
+        }
+      }
+    }
+  }
 }
 
