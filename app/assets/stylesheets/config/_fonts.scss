@@ -1,13 +1,16 @@
 // Import Google fonts
 //@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 //font-family: 'Open Sans', sans-serif;
 
 // Define fonts for body and headers
-$body-font: 'Open Sans', sans-serif;
-$headers-font: 'Open Sans', sans-serif;
+$body-font: 'Kanit', sans-serif;
+$headers-font: 'Kanit', sans-serif;
+
+
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {

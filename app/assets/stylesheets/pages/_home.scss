@@ -1,52 +1,123 @@
 // Specific CSS for your home-page
-    .banner {
-        //background-color: grey;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        height: 70vh;
-        h1 {
-            font-size: 70px;
-            font-weight: 800;
-            text-align: center;
+.banner-home {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  //background-color: lightgrey;
+  .banner-home-text-container {
+    height: 100%;
+    width: 50%;
+    //background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .banner-home-text-content {
+      h1 {
+        font-size: 75px;
+        font-weight: 800;
+      }
+      .highlighted-header {
+        background-color: #F1D6FF;
+        border-radius: 10px;
+        padding-left: 10px;
+      }
+      h3 {
+        margin: 20px 0px;
+        font-weight: 200; 
+      }
+      .banner-btn {
+        margin: 50px 0px;
+        a {
+          padding: 15px;
+          font-weight: 400;
+          color: grey;
+          text-decoration-line: none;
         }
-        h4 {
-            margin: 20px 0px;
-            font-weight: lighter; 
-            text-align: center;
+        .feedback-link {
+          background-color: #9F20E9;
+          border: 0px solid #F5F5F5;
+          color: white;
+          border-radius: 10px;
+          font-weight: 700;
         }
-        .banner-btn {
-            margin: 50px 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            a {
-              padding: 15px;
-              font-weight: 400;
-              color: grey;
-              text-decoration-line: none;
-            }
-            .feedback-link {
-              background-color: #9F20E9;
-              border: 0px solid #F5F5F5;
-              color: white;
-              border-radius: 5%;
-              font-weight: 700;
-            }
-            .feedback-link:hover {
-              background-color: #7C12BA;
-            }
-          }
+        .feedback-link:hover {
+          background-color: #7C12BA;
+        }
+      }
     }
+  }
+  .banner-home-image {
+    height: 100%;
+    width: 50%;
+    //background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .banner-img {
+      width: 60%;
+      border-radius: 10px;
+    }
+  }
+}   
 
-.home-image {
-    height: 10vh;
-    width: 100vw;
+.test-added-value {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 90px;
+  //background-color: #F1D6FF;
+  //background-color: red;
+  border-radius: 20px;
+  border: #9F20E9 solid 2px;
+  .test-added-value-card {
+    background-color: #9F20E9;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 70px;
+    transition-duration: 0.5s;
+    h1 {
+      font-size: 90px;
+      font-weight: 600;
+      color: white;
+    }
+    p {
+      font-size: 18px;
+      color: white;
+    }
+  }
+  .avc-container-left {
+    border-right: #C95CFF solid 1px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+  }
+  .avc-container-middle {
+    border-right: #C95CFF solid 1px;
+  }
+  .avc-container-right {
+    //background-color: red;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
+  .test-added-value-card:hover {
+    background-color: #FAF2FF;
+    h1 {
+      color: #7C12BA;
+      font-size: 120px;
+    }
+    p {
+      color: #7C12BA;
+    }
+  }
 }
-
 .home-solutions {
-  background-color: #FCF7FF;
+  background-color: #F8EBFF;
   padding: 80px;
+  margin-top: 100px;
 
   .divider {
     margin-top: 20px;

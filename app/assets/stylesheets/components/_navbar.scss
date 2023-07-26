@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  padding: 0px 200px;
+  padding: 0px 60px;
   height: 10vh;
   .container-fluid {
     height: 100%;
@@ -40,7 +40,7 @@
           a:hover {
             background-color: #F5F5F5;
             border: 0px solid #F5F5F5;
-            border-radius: 5%;
+            border-radius: 10px;
           }
       }
     }
@@ -82,7 +82,7 @@
         background-color: #9F20E9;
         border: 0px solid #F5F5F5;
         color: white;
-        border-radius: 5%;
+        border-radius: 10px;
         font-weight: 700;
       }
       .feedback-link:hover {

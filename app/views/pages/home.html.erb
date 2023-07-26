@@ -1,22 +1,44 @@
-    <div class="banner">
-        <div class="banner-central">
-            <div class="headers">
-                <div class="headers">
-                    <h1>SaaS Management</h1>
-                    <h1> Made Simple</h1>
-                </div>
-                <div class="small-header">
-                    <h4>Reduce SaaS costs and gain visibility in your procurement lifecycles.</h4>
-                </div>
-            </div>
+<div class="banner-home">
+    <div class="banner-home-text-container">
+        <div class="banner-home-text-content">
+            <h1 class="highlighted-header">Save SaaS Costs</h1>
+            <h1>With Automated</h1>
+            <h1>Management</h1>
+            <h3>You can't manage what you can't see</h3>
             <div class="banner-btn">
                 <div class="banner-link-waitlist">
-                <%= link_to "Provide Feedback", "/feedback", class: "feedback-link" %>
+                    <%= link_to "Provide Feedback", "/feedback", class: "feedback-link" %>
                 </div>
             </div>
         </div>
     </div>
-<div class="container home-solutions" id="solutions">
+    <div class="banner-home-image">
+        <%= image_tag "Banner.png", class: "banner-img" %>
+    </div>
+</div>
+
+<div class="test-added-value">
+    <div class="test-added-value-card avc-container-left">
+        <div class="avc-left">
+            <h1>30%</h1>
+            <p>That`s how much you case save on your software spend</p>
+        </div>
+    </div>
+    <div class="test-added-value-card avc-container-middle">
+        <div class="avc-middle">
+            <h1>78%</h1>
+            <p>That`s how much SaaS management work you can eliminate</p>
+        </div>
+    </div>
+    <div class="test-added-value-card avc-container-right">
+        <div class="avc-right">
+            <h1>100%</h1>
+            <p>That`s how much visibility you can gain about your software stack</p>
+        </div>
+    </div>
+</div>
+
+<div class="container home-solutions">
     <h1 class="solutions-header">Solutions</h1>
     <h5 class="solutions-small-header">A fully automated SaaS management tool</h5>
 
@@ -141,3 +163,27 @@
     </div>
    
 </div>
+
+<script>
+const delayedDiv = document.getElementById('delayed-div');
+
+// Function to check the scroll position and show the div if necessary
+function checkScrollPosition() {
+  // Change this value to control when the div should appear (in pixels from the top)
+  const triggerScrollPosition = 500;
+
+  // Get the current scroll position
+  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  // If the scroll position is greater than or equal to the trigger position, show the div
+  if (scrollPosition >= triggerScrollPosition) {
+    delayedDiv.classList.add('appear');
+  }
+}
+
+// Attach the checkScrollPosition function to the scroll event
+window.addEventListener('scroll', checkScrollPosition);
+
+// Call checkScrollPosition once initially to check if the div should appear on page load
+checkScrollPosition();
+</script>
