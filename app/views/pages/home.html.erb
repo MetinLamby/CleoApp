@@ -9,11 +9,15 @@
                 <div class="banner-link-waitlist">
                     <%= link_to "Provide Feedback", "/feedback", class: "feedback-link" %>
                 </div>
+                <div class="banner-link-solutions">
+                    <%= link_to "Solutions", "/#solutions", class: "solutions-link" %>
+                </div>
             </div>
         </div>
     </div>
     <div class="banner-home-image">
-        <%= image_tag "Banner.png", class: "banner-img" %>
+        <%#= image_tag "backgroundsquare.png", class: "banner-img" %>
+        <%= image_tag "bannerrectangle.png", class: "banner-img" %>
     </div>
 </div>
 
@@ -40,93 +44,55 @@
 
 <div class="container home-solutions">
     <h1 class="solutions-header">Solutions</h1>
-    <h5 class="solutions-small-header">A fully automated SaaS management tool</h5>
-
+    <h3 class="solutions-small-header">A fully automated SaaS management tool</h3>
     <div class="divider"></div>
+
     <div class="solution-cards">
         <div class="solution-card">
-            <h1 class="card-header">1) The Single Source of Truth for your Apps</h1>
-            <h5 class="card-small-header">You can't manage what you can't see</h5>
+            <h1 class="card-header">The Single Source of Truth for your Apps</h1>
+            <div id="solutions"></div>
+            <h3 class="card-small-header">You can't manage what you can't see</h3>
             <div class="benefits">
                 <div class="benefits-text">
                     <ul>
                         <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Easily discovering all SaaS apps in use</li>
                         <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Automatically keep SaaS stack up-to-date</li>
-                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Simply manage documents related to vendors, contracts, and invoices</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Streamline security and compliance management for all SaaS</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Manage documents related to vendors, contracts, and invoices</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Automated reminders for renewal dates</li>
                     </ul>
                 </div>
                 <div class="benefits-image">
-                    <%= image_tag "integrations.png", class: "feature-img" %>
+                    <%= image_tag "vendormanagement.png", class: "feature-img" %>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="divider"></div>
     <div class="solution-cards">
         <div class="solution-card">
-            <h1 class="card-header">2) Cut Unnecessary SaaS Costs</h1>
-            <h5 class="card-small-header">Identify savings opportunities</h5>
+            <h1 class="card-header">Cut Unnecessary Costs and Eliminate Unused Licenses</h1>
+            <h3 class="card-small-header">Identify savings opportunities</h3>
             <div class="benefits">
                 <div class="benefits-text">
                     <ul>
-                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Identify and eliminate redundant software licenses and spends</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Identify and eliminate unused and redundant software licenses</li>
                         <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Collaborative approach to manage SaaS costs effectively</li>
                         <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Breakdown of costs based on tools, users, and categories</li>
-                    </ul>
-                </div>
-                <div class="benefits-image">
-                    <%= image_tag "integrations.png", class: "feature-img" %>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="divider"></div>
-    <div class="solution-cards">
-        <div class="solution-card">
-            <h1 class="card-header">3) Eliminate unused licenses</h1>
-            <h5 class="card-small-header">Stop paying more than you should for SaaS licenses</h5>
-            <div class="benefits">
-                <div class="benefits-text">
-                    <ul>
-                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Identify and eliminate unused, redundant, and underutilized licenses and applications</li>
-                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Automatically remove unused licenses based on inactivity</li>
                         <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Improve overall software license utilization</li>
                     </ul>
                 </div>
                 <div class="benefits-image">
-                    <%= image_tag "integrations.png", class: "feature-img" %>
+                    <%= image_tag "costs.png", class: "feature-img" %>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="divider"></div>
     <div class="solution-cards">
         <div class="solution-card">
-            <h1 class="card-header">4) Ensure security and regulatory requirements</h1>
-            <h5 class="card-small-header">Mitigate SaaS-related risks and encourage the use of approved apps</h5>
-            <div class="benefits">
-                <div class="benefits-text">
-                    <ul>
-                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Streamline security and compliance management for your SaaS portfolio</li>
-                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Identifying and mitigating risks associated with SaaS usage</li>
-                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Real-time monitoring of updates on vendor exploits</li>
-                    </ul>
-                </div>
-                <div class="benefits-image">
-                    <%= image_tag "integrations.png", class: "feature-img" %>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="divider"></div>
-    <div class="solution-cards">
-        <div class="solution-card">
-            <h1 class="card-header">5) Automate SaaS procurement processes</h1>
-            <h5 class="card-small-header">Coordinate intake-to-procurement to avoid delays and inefficiencies</h5>
+            <h1 class="card-header">Automate SaaS procurement processes</h1>
+            <h3 class="card-small-header">Coordinate intake-to-procurement to inefficiencies</h3>
             <div class="benefits">
                 <div class="benefits-text">
                     <ul>
@@ -136,54 +102,9 @@
                     </ul>
                 </div>
                 <div class="benefits-image">
-                    <%= image_tag "integrations.png", class: "feature-img" %>
+                    <%= image_tag "procurement.png", class: "feature-img" %>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="divider"></div>
-    <div class="solution-cards">
-        <div class="solution-card">
-            <h1 class="card-header">5) Automate SaaS procurement processes</h1>
-            <h5 class="card-small-header">Coordinate intake-to-procurement to avoid delays and inefficiencies</h5>
-            <div class="benefits">
-                <div class="benefits-text">
-                    <ul>
-                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Minimize the time spent in these approval cycles</li>
-                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Ensure standardized SaaS procurement across the organization</li>
-                        <li><i class="fa-solid fa-circle-check" style="color: #0dbf31;"></i>Automate procurement processes using no-code workflows</li>
-                    </ul>
-                </div>
-                <div class="benefits-image">
-                    <%= image_tag "integrations.png", class: "feature-img" %>
-                </div>
-            </div>
-        </div>
-    </div>
-   
 </div>
-
-<script>
-const delayedDiv = document.getElementById('delayed-div');
-
-// Function to check the scroll position and show the div if necessary
-function checkScrollPosition() {
-  // Change this value to control when the div should appear (in pixels from the top)
-  const triggerScrollPosition = 500;
-
-  // Get the current scroll position
-  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-  // If the scroll position is greater than or equal to the trigger position, show the div
-  if (scrollPosition >= triggerScrollPosition) {
-    delayedDiv.classList.add('appear');
-  }
-}
-
-// Attach the checkScrollPosition function to the scroll event
-window.addEventListener('scroll', checkScrollPosition);
-
-// Call checkScrollPosition once initially to check if the div should appear on page load
-checkScrollPosition();
-</script>

@@ -1,6 +1,6 @@
 // Specific CSS for your home-page
 .banner-home {
-  height: 80vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -28,21 +28,35 @@
       }
       .banner-btn {
         margin: 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
         a {
           padding: 15px;
-          font-weight: 400;
+          font-weight: 600;
+          font-size: larger;
           color: grey;
           text-decoration-line: none;
         }
         .feedback-link {
           background-color: #9F20E9;
-          border: 0px solid #F5F5F5;
+          border: 2px solid #9F20E9;
           color: white;
           border-radius: 10px;
-          font-weight: 700;
+          margin-right: 20px;
         }
         .feedback-link:hover {
-          background-color: #7C12BA;
+          background-color: #9516DF;
+          border: 2px solid #9516DF;
+        }
+        .solutions-link {
+          background-color: white;
+          border: 2px solid #9F20E9;
+          color: #9F20E9;
+          border-radius: 10px;
+        }
+        .solutions-link:hover {
+          background-color: #F7EBFF;
         }
       }
     }
@@ -55,7 +69,7 @@
     align-items: center;
     justify-content: space-around;
     .banner-img {
-      width: 60%;
+      width: 75%;
       border-radius: 10px;
     }
   }
@@ -115,9 +129,9 @@
   }
 }
 .home-solutions {
-  background-color: #F8EBFF;
-  padding: 80px;
-  margin-top: 100px;
+  //background-color: #F8EBFF;
+  //padding: 80px;
+  margin-top: 120px;
 
   .divider {
     margin-top: 20px;
@@ -125,10 +139,8 @@
     height: 2px;
     background-color: #7C12BA; /* Set the color of the divider line */
   }
-
-
   .solutions-header {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 800;
   }
   .solutions-small-header {
@@ -141,9 +153,10 @@
       .card-header {
         margin: 20px 0;
         font-weight: 700;
+        font-size: 45px;
       }
       .card-small-header {
-        font-weight: lighter;
+        //font-weight: bold;
       }
       .benefits {
         display: flex;
@@ -158,7 +171,7 @@
                 i {
                     margin-right: 7px;
                 }
-                font-weight: bold;
+                //font-weight: bold;
                 font-size: larger;
                 margin: 30px 0px; 
             }
@@ -166,12 +179,18 @@
         }
         .benefits-image {
           width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: right;
           .feature-img {
-            width: -webkit-fill-available;
+            width: 80%;
           }
         }
       }
     }
+  }
+  .solution-cards:hover {
+    background-color: #F7EBFF;
   }
 }
 
