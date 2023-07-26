@@ -1,0 +1,191 @@
+// phone 
+@media (max-width: 767px) {
+  .navbar-lewagon {
+    justify-content: space-between;
+    padding: 0px 60px;
+    height: 10vh;
+    .container-fluid {
+      height: 100%;
+      .navbar-links-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        a {
+          padding: 15px;
+          font-weight: 600;
+          font-size: larger;
+          color: grey;
+          text-decoration-line: none;
+        }
+        .navbar-links {
+          height: 100%;
+          padding-left: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            margin-bottom: 0;
+            .navbar-link-div {
+              margin: 15px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            a {
+              padding: 15px;
+              font-weight: 600;
+              font-size: larger;
+              color: grey;
+              text-decoration-line: none;
+            }
+            a:hover {
+              background-color: #F5F5F5;
+              border: 0px solid #F5F5F5;
+              border-radius: 10px;
+            }
+        }
+      }
+    }
+  }
+  
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  .navbar-lewagon .navbar-brand img {
+    width: 40px;
+  }
+  
+  #header-navbar {
+    font-weight: 800;
+    color: #7C12BA;
+    margin-bottom: 0px;
+  }
+  
+  .navbar-links-right {
+    .navbar-links {
+      a {
+        color: grey;
+        text-decoration-line: none;
+        font-size: larger;
+      }
+    }
+  }
+}
+
+
+
+// laptop and bigger
+@media (min-width: 1024px) {
+  .navbar-lewagon {
+    justify-content: space-between;
+    padding: 0px 60px;
+    height: 10vh;
+    .container-fluid {
+      height: 100%;
+      .navbar-links-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        a {
+          padding: 15px;
+          font-weight: 600;
+          font-size: larger;
+          color: grey;
+          text-decoration-line: none;
+        }
+        .navbar-links {
+          height: 100%;
+          padding-left: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            margin-bottom: 0;
+            .navbar-link-div {
+              margin: 15px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            a {
+              padding: 15px;
+              font-weight: 600;
+              font-size: larger;
+              color: grey;
+              text-decoration-line: none;
+            }
+            a:hover {
+              background-color: #F5F5F5;
+              border: 0px solid #F5F5F5;
+              border-radius: 10px;
+            }
+        }
+      }
+    }
+  }
+  
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  .navbar-lewagon .navbar-brand img {
+    width: 40px;
+  }
+  
+  #header-navbar {
+    font-weight: 800;
+    color: #7C12BA;
+    margin-bottom: 0px;
+  }
+  
+  .navbar-links-right {
+    .navbar-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      a {
+        padding: 15px;
+        font-weight: 600;
+        font-size: larger;
+        color: grey;
+        text-decoration-line: none;
+      }
+      .navbar-link-div {
+        margin: 15px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .feedback-link {
+          background-color: #9F20E9;
+          border: 0px solid #F5F5F5;
+          color: white;
+          border-radius: 10px;
+          font-weight: 700;
+        }
+        .feedback-link:hover {
+          background-color: #7C12BA;
+        }
+      }
+    }
+  }
+}
+
+.navbar-lewagon {
+  justify-content: space-between !important;
+  background: white !important;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 1 !important;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px !important;
+}
