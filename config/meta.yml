@@ -1,0 +1,6 @@
+# config/meta.yml
+
+meta_product_name: "CLEO"
+meta_title: "CLEO - Save SaaS Costs"
+meta_description: "A fully automated SaaS management tool"
+meta_image: "bannersquare.png" # should exist in `app/assets/images/`
